@@ -1,0 +1,163 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#title h1 {
+    text-align: center;
+    font-size: 32px;
+    /* Larger font size for emphasis */
+    color: #ff5733;
+    /* A lively orange-red color */
+    margin-top: 20px;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    /* Rounded, festive font */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff5733, #ffbd33, #75ff33);
+    /* Gradient for added energy */
+    -webkit-background-clip: text;
+    /* Clips background to text */
+    -webkit-text-fill-color: transparent;
+    /* Makes text colorful */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    padding: 10px 0;
+}
+
+/* Toolbar */
+nav {
+    background-color: #4CAF50;
+    /* Green color similar to Thanh Đa site */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #388E3C;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subject-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.subject-group h3 {
+    color: #333;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.subject-group img {
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subject-group p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Map Section */
+#map {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 800px;
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.9em;
+    max-width: 200px;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .subject-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
